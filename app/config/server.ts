@@ -62,7 +62,7 @@ export const getServerSideConfig = () => {
 
   if (disableGPT4) {
     if (customModels) customModels += ",";
-    customModels += DEFAULT_MODELS.filter((m) => m.name.startsWith("gpt-4"))
+    customModels += DEFAULT_MODELS.filter((m) => m.name.startsWith("ft:gpt-3.5-turbo-1106:personal:irb75ft1:95QiXdwc"))
       .map((m) => "-" + m.name)
       .join(",");
   }
