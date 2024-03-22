@@ -11,7 +11,7 @@ import { GeminiProApi } from "./platforms/google";
 export const ROLES = ["system", "user", "assistant"] as const;
 export type MessageRole = (typeof ROLES)[number];
 
-export const Models = ["gpt-3.5-turbo", "gpt-4"] as const;
+export const Models = ["gpt-3.5-turbo", "ft:gpt-3.5-turbo-1106:personal:irb75ft1:95QiXdwc"] as const;
 export type ChatModel = ModelType;
 
 export interface MultimodalContent {
